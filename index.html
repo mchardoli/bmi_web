@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <!-- Link to external CSS in css/ folder -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <!-- Form for user input -->
+        <form onsubmit="return calculateBMI()">
+            <label for="weight">Weight (kg):</label>
+            <input type="text" id="weight"><br>
+
+            <label for="height">Height (m):</label>
+            <input type="text" id="height"><br>
+
+            <input type="submit" value="Calculate BMI">
+        </form>
+
+        <!-- Result will appear here -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Link to external JavaScript in js/ folder -->
+    <script src="js/script.js"></script>
+</body>
+</html>
